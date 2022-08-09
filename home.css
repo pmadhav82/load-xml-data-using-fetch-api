@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.showPost{
+    margin-top: 15px;
+    
+width: 100%;
+   display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
+  grid-template-rows: auto;
+    justify-content: space-around;
+    gap: 10px;
+ 
+    
+}
+.card{
+    display:flex;
+    margin: 10px;
+padding: 10px;
+background-color: #ffff;
+flex-direction: column;
+gap: 2rem;
+background-color: purple;
+color: #FFFFFF;
+border-radius: 10px;
+
+
+}
+.link:hover{
+color: yellow;
+
+}
+ a{
+    text-decoration: none;
+    color: #FFFFFF;
+    
+}
+.main{
+    background-image:  url("https://secureservercdn.net/198.71.233.185/uzf.847.myftpupload.com/wp-content/uploads/2021/12/shutterstock_1746589154-1536x864.jpg");
+background-size: cover;
+
+    width: 100%;
+height: 100vh;
+text-align: center;
+
+
+}
+
+.contain{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.video video{
+    margin-left: 7%;
+    margin-top: 5%;
+width: 90%;
+height: 40%;
+}
+
+
+.loader{
+    margin-top: 2rem;
+    border: 16px solid #f3f3f3;
+border-top: 16px solid #3498db;
+border-radius: 50%;
+width: 120px;
+height: 120px;
+animation: spin 2s linear infinite;
+
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+@media(max-width:768px){
+.contain{
+    grid-template-columns: 1fr;
+}
+.video{
+    margin-top: 10%;
+}
+.video video{
+    
+    height: 70%;
+}
+
+
+}
