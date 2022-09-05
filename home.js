@@ -1,7 +1,8 @@
 
 const showPost = document.querySelector(".showPost");
 
-const urlString= "https://teal-concha-13f5c3.netlify.app/feed.xml";
+const urlString= "http://127.0.0.1:5500/data.xml"
+//"https://teal-concha-13f5c3.netlify.app/feed.xml";
 
 const getData = async (url)=>{
     let html = "";
