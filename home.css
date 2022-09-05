@@ -10,34 +10,31 @@
     
 width: 100%;
    display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
+  grid-template-columns: 2fr;
   grid-template-rows: auto;
     justify-content: space-around;
     gap: 10px;
  
     
 }
+
+
+.post{
+    position: relative;
+    margin-top: 2rem;
+}
+
 .card{
     display:flex;
-    margin: 10px;
+    margin: auto;
 padding: 10px;
-background-color: #ffff;
+width: 80%;
 flex-direction: column;
 gap: 2rem;
-background-color: purple;
-color: #FFFFFF;
+border: 2px solid wheat;
 border-radius: 10px;
 
 
-}
-.link:hover{
-color: yellow;
-
-}
- a{
-    text-decoration: none;
-    color: #FFFFFF;
-    
 }
 .main{
     background-image:  url("https://secureservercdn.net/198.71.233.185/uzf.847.myftpupload.com/wp-content/uploads/2021/12/shutterstock_1746589154-1536x864.jpg");
@@ -50,25 +47,28 @@ text-align: center;
 
 }
 
-.contain{
+/* .contain{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 2fr;
 }
 .video video{
     margin-left: 7%;
     margin-top: 5%;
 width: 90%;
 height: 40%;
-}
+} */
 
 
 .loader{
-    margin-top: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: 16px solid #f3f3f3;
 border-top: 16px solid #3498db;
 border-radius: 50%;
-width: 120px;
-height: 120px;
+width: 4rem;
+height: 4rem;
 animation: spin 2s linear infinite;
 
 }
@@ -79,7 +79,7 @@ animation: spin 2s linear infinite;
 
 
 @media(max-width:768px){
-.contain{
+/* .contain{
     grid-template-columns: 1fr;
 }
 .video{
@@ -88,7 +88,7 @@ animation: spin 2s linear infinite;
 .video video{
     
     height: 70%;
-}
+} */
 
 
 }

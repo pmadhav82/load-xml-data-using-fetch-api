@@ -5,10 +5,11 @@ const urlString= "https://teal-concha-13f5c3.netlify.app/feed.xml";
 
 const getData = async (url)=>{
     let html = "";
+    let loader = document.querySelector(".loader");
+
 try{
     let res = await fetch(url);
     if(res){
-        let loader = document.querySelector(".loader");
         loader.style.display = "none";
       }
     let data = await res.text();
@@ -20,11 +21,12 @@ try{
     items.forEach((item)=>{
         return(
 html += `<div class = "card"> 
-<a  class = "link" target = "_none" href = "${item.children[1].innerHTML}">
-<h2 class = "post-title"> ${item.children[0].innerHTML}</h2> </a>
+<h2 class = "post-title"> ${item.children[0].innerHTML}</h2> 
 
 <b class = "post-date">${item.children[4].innerHTML.substring(0,16)}</b> 
-
+<p class = "description"> 
+${item.children[6].textContent}
+</P>
 
 </div>`)
 
