@@ -4,6 +4,15 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+.header{
+    
+    width: 100%;
+    background-color: rgb(27, 24, 27);
+    opacity: 1;
+    position: fixed;
+    top: 0;
+z-index: 1;
+}
 
 .showPost{
     margin-top: 15px;
@@ -14,14 +23,28 @@ width: 100%;
   grid-template-rows: auto;
     justify-content: space-around;
     gap: 10px;
+    height: auto;
  
     
+}
+.icons{
+    padding-top: 5px;
+    border-top: 2px solid beige;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
 }
 
 
 .post{
     position: relative;
     margin-top: 2rem;
+    
+}
+.post h2{
+    text-align: center;
 }
 
 .card{
@@ -31,6 +54,7 @@ padding: 10px;
 width: 80%;
 flex-direction: column;
 gap: 2rem;
+
 border: 2px solid wheat;
 border-radius: 10px;
 
@@ -47,16 +71,19 @@ text-align: center;
 
 }
 
-/* .contain{
-    display: grid;
-    grid-template-columns: 2fr;
+.video{
+    width: 100%;
+display: flex;
+
 }
+
 .video video{
-    margin-left: 7%;
-    margin-top: 5%;
-width: 90%;
-height: 40%;
-} */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+width: 30%;
+height: 10%;
+} 
 
 
 .loader{
@@ -67,6 +94,7 @@ height: 40%;
     border: 16px solid #f3f3f3;
 border-top: 16px solid #3498db;
 border-radius: 50%;
+margin-top: 2rem;
 width: 4rem;
 height: 4rem;
 animation: spin 2s linear infinite;
@@ -82,13 +110,14 @@ animation: spin 2s linear infinite;
 /* .contain{
     grid-template-columns: 1fr;
 }
+*/
 .video{
     margin-top: 10%;
 }
 .video video{
-    
+    width: 70%;
     height: 70%;
-} */
+} 
 
 
 }
